@@ -16,7 +16,7 @@ class SeleniumFunctions:
 
         self.driver = webdriver.Chrome(options=self.chrome_options,executable_path=chorome_path)
 
-        #self.driver = webdriver.Chrome("chromedriver.exe" )    
+        
         
     def get_product_page(self,path):
         self.driver.get(path)

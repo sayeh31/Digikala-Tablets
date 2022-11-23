@@ -1,5 +1,4 @@
-from Curller.main_curller import BackgroundTasks
+from Crawler.main_crawler import BackgroundTasks
 
 if __name__ =='__main__':
-    task = BackgroundTasks()
-    task.start()
+    BackgroundTasks()

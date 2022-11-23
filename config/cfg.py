@@ -2,9 +2,10 @@
 #Database Configs
 
 mysql = {
-    "host": "127.0.0.1",
+    "host": "localhost",
     "user": "root",
-    "passwd": "123456",
-    "db": "digikala",
+    "passwd": "password",
+    "db": "schema",
 }
 
+driver={"diver_path": None}

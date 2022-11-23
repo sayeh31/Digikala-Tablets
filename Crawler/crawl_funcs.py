@@ -1,24 +1,26 @@
-
 import pandas as pd
-from Curller.selenium_funcs import SeleniumFunctions
-from Curller.database_funcs import DatabaseFunctions
+from Crawler.selenium_funcs import SeleniumFunctions
+from Crawler.database_funcs import DatabaseFunctions
 import time
 import warnings
 import logging
 from selenium.webdriver.remote.remote_connection import LOGGER
 from webdriver_manager import chrome
+from config.cfg import driver
 
 
 
-
-class Curl:
+class Crawl:
     
-    def __init__(self,path):
+    def __init__(self,path,diver_path = None):
         self.path=path
+        self.diver_path = driver["diver_path"]
 
     def extract_tablet_info(self):
         warnings.filterwarnings('ignore')
-        seleniumfunctions=SeleniumFunctions(chrome.ChromeDriverManager().install())
+        if self.diver_path is None:
+            self.diver_path = chrome.ChromeDriverManager().install()
+        seleniumfunctions=SeleniumFunctions(self.diver_path)
         databasefunctions=DatabaseFunctions()
 
         products=seleniumfunctions.get_products_list(self.path)

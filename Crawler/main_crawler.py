@@ -1,15 +1,12 @@
-
 import API.services as services
 import db.models as models
-from Curller.Curl_funcs import Curl
+from Crawler.crawl_funcs import Crawl
 import time
-import threading
-
 
 
 PATH='https://www.digikala.com/search/category-tablet/?page=1'
 
-class BackgroundTasks(threading.Thread):
+class BackgroundTasks():
     
     def run(self):
         try:
@@ -21,5 +18,5 @@ class BackgroundTasks(threading.Thread):
             print('interrupted!')
 
     def extract_info(self):
-        curl=Curl(PATH)
-        curl.extract_tablet_info()
+        Crawl=Crawl(PATH,diver_path = 'path')
+        Crawl.extract_tablet_info()

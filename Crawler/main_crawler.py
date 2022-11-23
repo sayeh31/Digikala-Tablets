@@ -18,5 +18,5 @@ class BackgroundTasks():
             print('interrupted!')
 
     def extract_info(self):
-        Crawl=Crawl(PATH,diver_path = 'path')
-        Crawl.extract_tablet_info()
+        crawl=Crawl(PATH,diver_path = 'path')
+        crawl.extract_tablet_info()

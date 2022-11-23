@@ -1,0 +1,9 @@
+fastapi==0.87.0
+fastapi_utils==0.2.1
+pandas==1.4.4
+pydantic==1.10.2
+selenium==4.6.0
+SQLAlchemy==1.4.44
+uvicorn==0.20.0
+webdriver-manager==3.8.5
+PyMySQL==1.0.2

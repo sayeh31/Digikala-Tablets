@@ -2,10 +2,10 @@
 #Database Configs
 
 mysql = {
-    "host": "localhost",
-    "user": "root",
-    "passwd": "password",
-    "db": "schema",
+    "host": "HOST",
+    "user": "ROOT",
+    "passwd": "PASS",
+    "db": "DATABASE",
 }
 
 driver={"diver_path": None}

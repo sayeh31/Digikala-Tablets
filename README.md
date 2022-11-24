@@ -7,11 +7,19 @@ You can read this document to get a basic grasp on how to run this project , it'
 
 
 <h1>Running without Docker</h1>
-step1: install requirements.txt 
 
-step2: create tablet information tabel in mysql db using python tablet_initial.py
+step1: please replace your MySql connection information in 
+```config/cfg.py```
 
-step3: extract tablets information from digikala and insert/updated db using python startup.py
+step2: install requirements.txt  
+```pip install -r requirements.txt```
 
-step4: create api to get tablets information using python runserver.py
+step3: create tablet information tabel in mysql db using 
+```python tablet_initial.py```
+
+step4: extract tablets information from digikala and insert/updated db using 
+```python startup.py```
+
+step5: create api to get tablets information using 
+```python runserver.py```
 

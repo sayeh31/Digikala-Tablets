@@ -7,3 +7,4 @@ SQLAlchemy==1.4.44
 uvicorn==0.20.0
 webdriver-manager==3.8.5
 PyMySQL==1.0.2
+Cryptography==38.0.3

@@ -61,6 +61,8 @@ There are two ways to run the project:
     $ python python startup.py
     ```
     The scraper is responsible for adding/updating data to the database, so if it's not running, no new data will be added or updated.
+    
+**NOTE**: If ChromeDriver didn't download automatically, you can download it from [ChoromeDriver](https://chromedriver.chromium.org/downloads), and then change `diver_path` inside `config/cfg.py` to the path of the downloaded driver.
 
 6. Run the REST API server:
     ```console
